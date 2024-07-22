@@ -54,6 +54,7 @@ async def get_face_features(
     api_key: str = Depends(verify_api_key)
 ):
 
+
     # モデルファイルのパス
     base_dir = os.path.dirname(os.path.abspath(__file__))
     shape_predictor_path = os.path.join(base_dir, "models", "shape_predictor_68_face_landmarks.dat")
